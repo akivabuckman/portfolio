@@ -68,11 +68,20 @@
   }
   
 const toggleButtons = document.querySelectorAll('.btn-link');
-
-for (let button of toggleButtons) {
-  button.addEventListener('click', function() {
-    const icon = button.querySelector('i');
-    icon.classList.toggle('fa-chevron-down');
-    icon.classList.toggle('fa-chevron-up');
+// in the function, loop through all the togglebuttons
+for (let butn of toggleButtons) {
+  butn.addEventListener('click', function() {
+    for (let button of toggleButtons) {
+      const icon = button.querySelector('i');
+      if (button.getAttribute("aria-expanded") === "true") {
+        console.log(button, "expanded")
+        icon.classList.add("fa-chevron-down");
+        icon.classList.remove("fa-chevron-up")
+      } else {
+        console.log("collapsed")
+        icon.classList.add("fa-chevron-up");
+        icon.classList.remove("fa-chevron-down")
+      }
+    }
   });
 }
