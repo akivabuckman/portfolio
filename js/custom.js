@@ -68,20 +68,31 @@
   }
   
 const toggleButtons = document.querySelectorAll('.btn-link');
-// in the function, loop through all the togglebuttons
-for (let butn of toggleButtons) {
-  butn.addEventListener('click', function() {
-    for (let button of toggleButtons) {
-      const icon = button.querySelector('i');
-      if (button.getAttribute("aria-expanded") === "true") {
-        console.log(button, "expanded")
-        icon.classList.add("fa-chevron-down");
-        icon.classList.remove("fa-chevron-up")
-      } else {
-        console.log("collapsed")
-        icon.classList.add("fa-chevron-up");
-        icon.classList.remove("fa-chevron-down")
+
+toggleButtons.forEach(button => {
+  const icon = button.querySelector('i'); // Assuming the <i> tag is a direct child of the button
+  
+  button.addEventListener('click', () => {
+    toggleButtons.forEach(otherButton => {
+      const otherIcon = otherButton.querySelector('i');
+      if (otherButton !== button) {
+        otherButton.setAttribute('aria-expanded', 'false');
+        otherIcon.classList.remove('fa-chevron-up');
+        otherIcon.classList.add('fa-chevron-down');
       }
+    });
+
+    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+    if (isExpanded) {
+      icon.classList.remove('fa-chevron-up');
+      icon.classList.add('fa-chevron-down');
+    } else {
+      icon.classList.remove('fa-chevron-down');
+      icon.classList.add('fa-chevron-up');
     }
+
+    button.setAttribute('aria-expanded', String(!isExpanded));
   });
-}
+});
+
