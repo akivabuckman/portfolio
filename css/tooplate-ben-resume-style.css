@@ -31,13 +31,24 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   :root {
+    /* ORIGINAL
     --primary-color:        #ffd500;
     --white-color:          #ffffff;
     --dark-color:           #010101;
     --menu-bg-color:        #212529;
 
     --gray-color:           #909090;
+    --p-color:              #7d7a7a; */
+
+    --primary-color:        #14FFEC;
+    --secondary-color:      #0D7377;
+    --white-color:          #ffffff;
+    --dark-color:           #212121;
+    --menu-bg-color:        #323232;
+
+    --gray-color:           #909090;
     --p-color:              #7d7a7a;
+
 
     --base-font-family:     "Plain", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --font-weight-bold:     600;
@@ -84,6 +95,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   h3 {
     font-size: var(--h3-font-size);
+    
   }
 
   h4 {
@@ -157,7 +169,7 @@ https://www.tooplate.com/view/2120-ben-resume
   }
 
   a {
-    color: var(--dark-color);
+    color: var(--primary-color);
     text-decoration: none;
     transition: all 0.4s linear;
   }
@@ -304,9 +316,19 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .hero-title,
   .email-link {
-    background: var(--dark-color);
+    background: var(--primary-color);
     border-radius: var(--border-radius-medium);
-    color: var(--white-color);
+    color: var(--dark-color);
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+	font-size: 2.2em;
+  }
+
+  .hero-title2 {
+    background: var(--menu-bg-color);
+    border-radius: var(--border-radius-medium);
+    color: var(--primary-color);
     display: inline-block;
     margin: 0.5rem 0;
     padding: 0.5rem 2rem 1.5rem 2rem;
@@ -629,12 +651,9 @@ https://www.tooplate.com/view/2120-ben-resume
 }
 
 .tools {
-  color: deepskyblue
+  color: #14FFEC
 }
 
-section {
-  background-color: rgb(210, 233, 233)
-}
 
 .card-body img {
   max-width: 100%;
@@ -653,4 +672,113 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Add this line to center-align vertically */
+}
+
+/* icons */
+#icons ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#icons ul li {
+  list-style: none;
+  margin: 15px;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  background: #212121;
+  line-height: 100px;
+  text-align: center;
+  color: #666;
+  font-size: 5em;
+  border-radius: 50%;
+  transition: .5s;
+  border: 1px solid var(--color)
+}
+
+#icons ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--color);
+  transform: scale(.9);
+  z-index: -1;
+}
+
+#icons ul li:hover:before {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px var(--color);
+}
+
+#icons ul li:hover {
+  color: var(--color);
+  box-shadow: 0px 0px 8px var(--color);
+  text-shadow: 0 0 8px var(--color);
+}
+
+.skillText {
+  font-size: .4em;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  #icons ul li {
+    height: 100px;
+    width: 100px;
+    font-size: 2em;
+  }
+}
+
+.card-body ul li {
+  color: var(--p-color)
+}
+
+
+
+/* background */
+
+
+body {
+  /* The image used as the background */
+  background-image: url("../images/bg.jpg");
+  background-attachment: fixed; /* Make the background image fixed */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.textBg {
+  background-color: rgba(33,33,33, 0.9); 
+  border-radius: 20px;
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 10px;
+}
+
+.paraBg {
+    background-color: rgba(33,33,33, 0.9); 
+    color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color)
+
 }

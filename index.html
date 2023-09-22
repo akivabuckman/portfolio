@@ -11,20 +11,20 @@
      <meta name="author" content="Tooplate">
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-     <link rel="icon" href="./images/pf.png" />
+     <link rel="icon" href="./images/abLogo.png" />
      <link rel="apple-touch-icon" href="./images/pf.png" />
 
      <link rel="stylesheet" href="css/bootstrap.min.css">
      <link rel="stylesheet" href="css/all.min.css">
      <link rel="stylesheet" href="css/owl.carousel.min.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">
+
+
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-ben-resume-style.css">
-<!--
-Tooplate 2120 Ben Resume
-https://www.tooplate.com/view/2120-ben-resume
--->
+
 </head>
 
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
@@ -68,7 +68,7 @@ https://www.tooplate.com/view/2120-ben-resume
         </div>
     </nav>
 
-
+    <div id="bgDiv">
     <!-- HERO -->
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
 
@@ -76,7 +76,7 @@ https://www.tooplate.com/view/2120-ben-resume
             <div class="row">
 
                   <div class="mx-auto col-lg-5 col-md-5 col-10">
-                      <img src="https://media.licdn.com/dms/image/C5603AQEvvjDbycooJw/profile-displayphoto-shrink_800_800/0/1580733541188?e=1697068800&v=beta&t=BPTEHhJkg2cLsgwnory7vWXsuj1LZmdtGYvanIIjirA" class="img-fluid" alt="Ben Resume HTML Template">
+                      <img src="https://media.licdn.com/dms/image/C5603AQEvvjDbycooJw/profile-displayphoto-shrink_800_800/0/1580733541188?e=1697068800&v=beta&t=BPTEHhJkg2cLsgwnory7vWXsuj1LZmdtGYvanIIjirA" class="img-fluid" alt="akiva">
                   </div>
 
                    <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
@@ -84,7 +84,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
                             <h1 class="hero-title">Hey 👋 I'm Akiva Buckman</h1>
 
-                            <div class="hero-title">
+                            <div class="hero-title2">
                                 a Full Stack Developer
                             </div>
                           
@@ -100,10 +100,12 @@ https://www.tooplate.com/view/2120-ben-resume
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-md-6 col-12">
-                    <p>I'm a full stack developer, experienced in Python, with a background in MEP engineering. I'm obsessed with learning new technologies and solving problems with them.</p>
-                    <p>After years of solving problems and puzzles as an engineer I am seeking an opportunity to do the same in the world of full stack development.</p>
-                    <p>I grew up in the USA and have been in Israel for over a decade, so both my English and Hebrew language skills are almost as good as my JavaScript and Python language skills 😉</p>
+                <div  class="col-lg-6 col-md-6 col-12">
+                  <h2>About Me</h2>
+                  <p class="paraBg">My idea of relaxing is solving puzzles, building things, and figuring complex things out. Guitar and YouTube are fun too.</p>
+                  <p class="paraBg">I'm a full stack developer, experienced in Python, with a background in MEP engineering. I'm obsessed with learning new technologies and solving problems with them.</p>
+                    <p class="paraBg">After years of solving problems and puzzles as an engineer I am seeking an opportunity to do the same in the world of full stack development.</p>
+                    <p class="paraBg">I grew up in the USA and have been in Israel for over a decade, so both my English and Hebrew language skills are almost as good as my JavaScript and Python language skills 😉</p>
 
                     <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
 
@@ -111,109 +113,42 @@ https://www.tooplate.com/view/2120-ben-resume
                     </ul>
                 </div>
             </div>
-            <h2>Technical Skills:</h2>
-            <div class="row about-third">
-              <div class="col-lg-3 col-md-4 col-12 techSkill" style="background-image: url('./images/js.jpg'); background-size: 40%; background-repeat: no-repeat; background-position: center;">
-                <h3>JavaScript</h3>
-                <strong>React, NodeJS, Express, API, etc.</strong>
-              </div>
-            	<div class="col-lg-3 col-md-4 col-12 techSkill" style="background-image: url('./images/python.jpg'); background-size: 40%; background-repeat: no-repeat; background-position: center;">
-                <h3>Python</h3>
-                <strong>Django, Django REST, API, OOP, Pandas, Selenium, Tkinter, Xlwings, etc.</strong>
-              </div>
-            	<div class="col-lg-3 col-md-4 col-12 techSkill" style="background-image: url('./images/sql.jpg'); background-size: 40%; background-repeat: no-repeat; background-position: center;">
-                <h3>SQL</h3>
-              </div>
-            	<div class="col-lg-3 col-md-4 col-12 techSkill" style="background-image: url('./images/excel.jpg'); background-size: 60%; background-repeat: no-repeat; background-position: center;">
-                <h3>Excel (Expert)</h3>
-                <strong>VBA</strong>
-              </div>
-            	<div class="col-lg-3 col-md-4 col-12 techSkill" style="background-image: url('./images/autocad.jpg'); background-size: 70%; background-repeat: no-repeat; background-position: center;">
-                <h3>AutoCAD</h3>
-              </div>
-            </div>
         </div>
+      </section>
+
+    <section id="icons" class="section-padding">
+      <div class="container">
+        <h2>Technical Skills</h2>
+      <br />
+      <ul>
+        <li style="--color: #F0DB4F">
+          <p class="skillText">JavaScript</p>
+          <i class="fab fa-js"></i>
+        </li>
+        <li style="--color: #4B8BBE">
+          <p class="skillText">Python</p>
+          <i class="fab fa-python"></i>
+                </li>
+        <li style="--color: #F29111">
+          <p class="skillText">SQL</p>
+          <i class="fas fa-database"></i>
+        </li>
+        <li style="--color: #1D6F42">
+          <p class="skillText">Excel</p>
+          <p class="skillText">(VBA)</p>
+          <i class="fas fa-file-excel"></i>
+        </li>
+        <li style="--color: #ff2827">
+          <p class="skillText">AutoCAD</p>
+          <i class="fas fa-ruler"></i>        </li>
+      </ul>
+      </div>
+      
+
     </section>
 
 
-    <!-- TESTIMONIAL
-     <section class="testimonials section-padding" id="testimonials">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-12">
-                        <h3 class="mb-5 text-center">What People say</h3>
-
-                        <div class="owl-carousel owl-theme" id="testimonials-carousel">
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image01.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Ben</h6>
-                                        <span>Art Director</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image02.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Marie</h6>
-                                        <span>Marketing Consultant</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image03.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Jen</h6>
-                                        <span>Product Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonials-thumb d-flex">
-                                    <div class="testimonials-image">
-                                        <img src="images/testimonials/testimonial-image04.jpg" class="img-fluid" alt="testimonials image">
-                                    </div>
-
-                                    <div class="testimonials-info">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-
-                                        <h6 class="mb-0">Wilson</h6>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-               </div>
-          </div>
-     </section> -->
-
-
-     <!-- FAQ -->
+  
      <section id="projects" class="faq section">
         
         <div class="container">
@@ -222,7 +157,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
                 <div class="col-lg-12 col-12">
 
-                    <h3 class="mb-5">Projects</h3>
+                    <h2 class="mb-5">Projects</h2>
 
                     <div class="accordion" id="accordionExample">
                       <div class="card">
@@ -294,17 +229,17 @@ https://www.tooplate.com/view/2120-ben-resume
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                           <div class="card-body">
-                            <strong class="tools">React, Node.js, JavaScript, Algorithm, MaterialUI</strong>
+                            <strong class="tools">React, Node.js, JavaScript, MaterialUI, Complex Algorithm</strong>
                             <ul>
                               <li>Get user input of SEO decisions, and return their score and feedback</li>
                               <li>Score is based on complex proprietary algorithm</li>
                               <li>Save and analyze user progress</li>
-                              <li>Interactive, user-friendly UI/UX</li>
+                              <li>Interactive, user-friendly UI/UX design</li>
                             </ul>
                             <div class="projectImgDiv">
                               <img src="./images/sem1.jpg" alt="semulator">
                               <img src="./images/sem2.jpg" alt="semulator">
-                              <img src="./images/sem3.jpg" alt="music">
+                              <img src="./images/sem3.jpg" alt="semulator">
                             </div>
                             <a target="_blank" href=https://github.com/akivabuckman/semulatorClient>View Github</a>
                             <br />
@@ -338,7 +273,7 @@ https://www.tooplate.com/view/2120-ben-resume
                           </div>
                         </div>
                     </div>
-                    <span class="faq-info-text">Please feel free to reach out about anything tech, construction, or music theory:</span>
+                    <p class=" textBg faq-info-text">I'm always down to chat about anything tech, construction, TLV Light Rail, or music theory</p>
                 </div>
            	 </div><!-- col -->
         	</div><!-- row -->
@@ -350,40 +285,16 @@ https://www.tooplate.com/view/2120-ben-resume
       <div class="container">
         <div class="row">
 
-          <!-- <div class="col-lg-6 col-md-6 col-12"> -->
-            <!-- <form action="#" method="get" class="contact-form webform"  role="form">
-                
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="text" class="form-control" name="cf-name" id="cf-name" placeholder="Your Name">
 
-                    <label for="cf-name" class="webform-label">Full Name</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <input type="email" class="form-control" name="cf-email" id="cf-email" placeholder="Your Email">
-
-                    <label for="cf-email" class="webform-label">Your Email</label>
-                </div>
-
-                <div class="form-group d-flex flex-column-reverse">
-                    <textarea class="form-control" rows="5" name="cf-message" id="cf-message" placeholder="Your Message"></textarea>
-
-                    <label for="cf-message" class="webform-label">Message</label>
-                </div>
-
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
-            </form> -->
-          <!-- </div> -->
 
             <div class="mx-auto">
-                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
+                <h3 class="textBg my-4 pt-4 pt-lg-0">Say hello</h3>
                 <p>
-                    <a href="mailto:akivabuckman@gmail.com">
+                    <a textBg href="mailto:akivabuckman@gmail.com">
                         akivabuckman@gmail.com
                     <i class="fas fa-arrow-right custom-icon"></i>
                     </a>
                 </p>
-
                 <ul class="social-links mt-2">
                   <li><a target="_blank" href="https://www.linkedin.com/in/akiva-buckman-644350195/" rel="noopener" class="fab fa-linkedin"></a></li>
                   <li><a target="_blank" href="https://github.com/akivabuckman" rel="noopener" class="fab fa-github"></a></li>
@@ -395,6 +306,7 @@ https://www.tooplate.com/view/2120-ben-resume
         </div>
       </div>
     </section>
+    </div>
      <!-- SCRIPTS -->
      <script src="js/jquery.min.js"></script>
      <script src="js/bootstrap.min.js"></script>
