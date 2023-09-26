@@ -41,13 +41,14 @@ https://www.tooplate.com/view/2120-ben-resume
     --p-color:              #7d7a7a; */
 
     --primary-color:        #14FFEC;
-    --secondary-color:      #0D7377;
+    --secondary-color:      #c9c9c9;
+    --border-color:         #0D7377;
     --white-color:          #ffffff;
     --dark-color:           #212121;
     --menu-bg-color:        #323232;
 
     --gray-color:           #909090;
-    --p-color:              #7d7a7a;
+    --p-color:              #c9c9c9;
 
 
     --base-font-family:     "Plain", -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -557,7 +558,7 @@ https://www.tooplate.com/view/2120-ben-resume
 
   .social-links a {
     display: inline-block;
-    color: var(--p-color);
+    color: var(--primary-color);
     font-size: var(--h6-font-size);
     margin: 5px 20px 5px 0;
   }
@@ -692,7 +693,7 @@ https://www.tooplate.com/view/2120-ben-resume
   background: #212121;
   line-height: 100px;
   text-align: center;
-  color: #666;
+  color: #c9c9c9;
   font-size: 5em;
   border-radius: 50%;
   transition: .5s;
@@ -774,11 +775,24 @@ body, html {
   padding: 10px;
 }
 
+.textGrey {
+  background-color: rgba(33,33,33, 0.9); 
+  border-radius: 20px;
+  color: var(--p-color);
+  display: inline-block;
+  padding: 10px;
+}
+
 .paraBg {
     background-color: rgba(33,33,33, 0.9); 
     color: var(--secondary-color);
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid var(--secondary-color)
+    border: 1px solid var(--border-color)
 
 }
+
+ .linkys {
+  display: flex;
+  justify-content: space-around;
+ }
